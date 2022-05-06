@@ -10,6 +10,7 @@ class OuterType {
   InnerType it;
 };
 
-auto OuterType::GetInner() -> OuterType::InnerType { return it; }
+// auto OuterType::GetInner() -> OuterType::InnerType { return it; }
+auto OuterType::GetInner() -> InnerType { return it; }
 
 int main() {}
